@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.vacationvelocity.com/sitemap.xml

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vacation Velocity | Fast Travel Guides & Weekend Getaways</title>
+  <meta name="description" content="Discover 48-hour city guides, quick packing tips, and our free Travel Budget Estimator. Maximize your weekend getaways with Vacation Velocity.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo"><span class="logo-icon">✈️</span> VacationVelocity</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="blog.html">Destinations</a></li>
+        <li><a href="#calculator">Budget Tool</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">Less Planning. More Travel.</div>
+      <h1>Maximize Your <span class="accent">Weekend</span></h1>
+      <p>Action-packed 48-hour itineraries, hyper-efficient packing guides, and tools to help you travel faster, cheaper, and better.</p>
+      <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+        <a href="blog.html" class="btn btn-primary">Read Our Guides</a>
+        <a href="#calculator" class="btn btn-secondary">Estimate Trip Cost</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUDGET ESTIMATOR TOOL -->
+  <section id="calculator" class="tool-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Travel Budget Estimator</h2>
+        <p>Plan your finances before you fly. Get a quick estimate of how much your next adventure will cost.</p>
+      </div>
+      
+      <div class="calc-card">
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Destination Region</label>
+            <select id="destination">
+              <option value="europe">Europe</option>
+              <option value="asia">Asia</option>
+              <option value="namerica">North America</option>
+              <option value="samerica">South America</option>
+              <option value="africa">Africa</option>
+              <option value="oceania">Oceania / Australia</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Travel Style</label>
+            <select id="style">
+              <option value="budget">Budget / Backpacker</option>
+              <option value="standard" selected>Standard / Mid-Range</option>
+              <option value="luxury">Luxury / Resort</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Number of Days</label>
+            <input type="number" id="days" value="3" min="1" max="90">
+          </div>
+          <div class="form-group">
+            <label>Number of Travelers</label>
+            <input type="number" id="travelers" value="2" min="1" max="20">
+          </div>
+        </div>
+        <button id="calcBtn" class="btn btn-primary calc-btn">Calculate Estimated Cost</button>
+        
+        <div id="resultPanel" class="result-panel">
+          <div>Estimated Total (Excluding Flights)</div>
+          <div id="totalCost" class="total-cost">$0</div>
+          
+          <div class="breakdown">
+            <div class="b-item"><div class="lbl">Accommodation</div><div id="costAcc" class="val">$0</div></div>
+            <div class="b-item"><div class="lbl">Food & Drinks</div><div id="costFood" class="val">$0</div></div>
+            <div class="b-item"><div class="lbl">Activities & Local Transport</div><div id="costAct" class="val">$0</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECENT GUIDES -->
+  <section class="articles-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Latest Getaway Guides</h2>
+      </div>
+      <div class="articles-grid">
+        
+        <a href="articles/48-hours-rome.html" class="card">
+          <div class="card-img">🏛️</div>
+          <div class="card-body">
+            <span class="tag">Itinerary</span>
+            <h3>48 Hours in Rome: The High-Speed Guide</h3>
+            <p>Skip the lines and see the Colosseum, Vatican, and hidden gems in just one weekend.</p>
+          </div>
+          <div class="card-footer"><span>Europe</span><span>5 min read</span></div>
+        </a>
+
+        <a href="articles/weekend-packing-list.html" class="card">
+          <div class="card-img">🎒</div>
+          <div class="card-body">
+            <span class="tag">Packing</span>
+            <h3>The Ultimate Weekend Carry-On Packing List</h3>
+            <p>How to pack everything you need for 3 days into a single under-seat backpack.</p>
+          </div>
+          <div class="card-footer"><span>Tips</span><span>4 min read</span></div>
+        </a>
+
+        <a href="articles/budget-airlines-survival.html" class="card">
+          <div class="card-img">✈️</div>
+          <div class="card-body">
+            <span class="tag">Hacks</span>
+            <h3>Surviving Budget Airlines: How to Avoid Hidden Fees</h3>
+            <p>Ryanair, Spirit, EasyJet: learn the rules to fly cheap without getting stung at the gate.</p>
+          </div>
+          <div class="card-footer"><span>Finance</span><span>6 min read</span></div>
+        </a>
+        
+        <a href="articles/48-hours-tokyo.html" class="card">
+          <div class="card-img">🗼</div>
+          <div class="card-body">
+            <span class="tag">Itinerary</span>
+            <h3>48 Hours in Tokyo: Neon Lights & Temples</h3>
+            <p>A whirlwind tour of Shibuya, Shinjuku, and Asakusa. Maximize your time in Japan's capital.</p>
+          </div>
+          <div class="card-footer"><span>Asia</span><span>8 min read</span></div>
+        </a>
+        
+        <a href="articles/jet-lag-recovery.html" class="card">
+          <div class="card-img">☕</div>
+          <div class="card-body">
+            <span class="tag">Health</span>
+            <h3>Beat Jet Lag Fast: A Science-Backed Protocol</h3>
+            <p>Don't waste a day of your trip. Use light exposure and timing to reset your circadian rhythm.</p>
+          </div>
+          <div class="card-footer"><span>Wellness</span><span>5 min read</span></div>
+        </a>
+        
+        <a href="articles/48-hours-new-york.html" class="card">
+          <div class="card-img">🍎</div>
+          <div class="card-body">
+            <span class="tag">Itinerary</span>
+            <h3>48 Hours in NYC: The Classic Weekend</h3>
+            <p>Central Park, Broadway, and the best pizza. How to conquer the Big Apple in two days.</p>
+          </div>
+          <div class="card-footer"><span>North America</span><span>7 min read</span></div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo"><span class="logo-icon">✈️</span> VacationVelocity</div>
+          <p>Helping you travel faster, smarter, and more often. Because life is too short for long layovers.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul><li><a href="blog.html">Destinations</a></li><li><a href="#calculator">Budget Tool</a></li><li><a href="about.html">About</a></li></ul>
+        </div>
+        <div>
+          <h4>Categories</h4>
+          <ul><li><a href="blog.html">Itineraries</a></li><li><a href="blog.html">Packing Lists</a></li><li><a href="blog.html">Travel Hacks</a></li></ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li><li><a href="disclaimer.html">Disclaimer</a></li><li><a href="sitemap-html.html">HTML Sitemap</a></li><li><a href="contact.html">Contact</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 VacationVelocity.com. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+
+  <style>
+    #cookie-consent {
+      position: fixed; bottom: 0; left: 0; right: 0;
+      background: #111; color: #fff; padding: 15px;
+      text-align: center; z-index: 9999;
+      font-size: 0.9rem; display: flex;
+      justify-content: center; align-items: center; gap: 15px;
+    }
+    #cookie-consent button {
+      background: #fff; color: #111; border: none;
+      padding: 8px 15px; cursor: pointer; border-radius: 4px;
+      font-weight: bold;
+    }
+    #cookie-consent button:hover { background: #ddd; }
+  </style>
+  <div id="cookie-consent">
+    <span>We use cookies to improve your experience and serve personalized ads. By continuing, you agree to our privacy policy.</span>
+    <button onclick="document.getElementById('cookie-consent').style.display='none'">Accept</button>
+  </div>
+</body>
+</html>
